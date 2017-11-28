@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/control.css" rel="stylesheet">
+    <link href="../css/resume.css" rel="stylesheet">
+    <link href="../css/reguser1.css" rel="stylesheet">
+    <title>简历填写-完善基本信息</title>
+</head>
+<body>
+<div class="header">
+    <div class="width1200 align_center" style="padding-top: 14px;justify-content: space-between">
+        <img src="../images/logo.png"/>
+        <div style="height: 52px;line-height: 52px"><span class="city">全国</span><span class="changecity">[切换]</span></div>
+        <div class="menu">
+            <a href="#" class="menuactive">首页</a>
+            <a  href="#">找工作</a>
+            <a  href="#">实习/兼职</a>
+            <a  href="#">求职保镖</a>
+            <a  href="#">职场信用</a>
+            <a  href="#">就业大数据</a>
+        </div>
+        <div class="login">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+            <a href="#">企业入口</a>
+        </div>
+    </div>
+</div>
+<div class="resume_content ">
+    <div class="relative" style="width: 620px;margin: 0 auto">
+        <div class="resume_step">
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready"><span>1</span></div>
+            </span>
+                <p>基本信息</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_no"><span>2</span></div>
+            </span>
+                <p>教育经历</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_no"><span>3</span></div>
+            </span>
+                <p>工作经历</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_no"><span>4</span></div>
+            </span>
+                <p>一句话介绍</p>
+            </div>
+        </div>
+
+        <div class="resume_step_progress">
+            <i class="resume_step_ready"></i>
+        </div>
+
+        <div class="register_msg">
+            <div class="msg_zj">
+                    <div  class="img_tx">
+                        <svg class="icon icon1" aria-hidden="true">
+                            <use xlink:href="#icon-xuesheng"></use>
+                        </svg>
+                        <div class="img_con">
+                            <svg class="icon icon2" aria-hidden="true">
+                                <use xlink:href="#icon-xiangji"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="title_zj font_zj1">基本信息</div>
+                    <span class="radio_box radio_sec font_zj1">我是男生</span>
+                    <span class="radio_box font_zj1 right_align">我是女生</span>
+                    <label class="general-input name">
+                        <input type="text" id="user_name" style="width: 120px" placeholder="姓名">
+                    </label>
+
+                    <label class="general-input right_align" >
+                        <input type="text" id="telphone" style="width: 120px" placeholder="13888888888">
+                    </label>
+                    <div class="chec_tip1">
+                        <div class="left_align"></div>
+                        <div class="right_align" style="width: 162px;"></div>
+                    </div>
+                    <label class="general-input email_zj" >
+                        <input type="text" id="email" style="width: 300px" placeholder="邮箱">
+                    </label>
+                    <div class="chec_tip"></div>
+                    <div class=" relative general-select left_align city1">
+                        <label class="general-input relative general-select">
+                            <input type="text" readonly="" id="city" value="重庆市">
+                            <svg class="icon inputicon" aria-hidden="true">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
+                            </svg>
+                        </label>
+                        <div class="options" style="height: 0px;">
+                        </div>
+                    </div>
+                    <div class=" relative general-select district1">
+                        <label class="general-input relative general-select" >
+                            <input type="text" readonly="" id="city_area" value="渝中区">
+                            <svg class="icon inputicon" aria-hidden="true">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
+                            </svg>
+                        </label>
+                        <div class="options" style="height: 0px;top:210px">
+
+                        </div>
+                    </div>
+                    <label class="general-input detail_zj" >
+                        <input type="text" id="address" placeholder="详细地址（选填）">
+                    </label>
+                    <span class="public_bigbtn bg1aa wrap" id="post_next">下一步：完善教育信息</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--弹框-->
+    <div class="modalbox loginn_zj" id="modalbox" style="display: none;">
+        <div class="modal">
+            <p class="title_content">标题内容</p>
+            <span class="modalclose">
+                <img src="../images/close.png"/>
+            </span>
+            <div class="modal_con">
+                <div class="one_btn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-shangchuan"></use>
+                    </svg>
+                </div>
+                <div class="erweima">
+                    <img src="../images/erweima.png" class="pic"/>
+                </div>
+            </div>
+            <div class="title">
+                <span>电脑上传</span>
+                <span>手机扫码上传</span>
+            </div>
+            <input type='file' name='file' id='file' accept='image/*' style="display: none">
+            <span class="public_bigbtn bg1aa modalbtn">立即上传</span>
+        </div>
+    </div>
+    <!--弹框end-->
+
+
+
+</div>
+
+
+</body>
+<script src="../js/jquery.js" rel="script"></script>
+<script src="../js/ajaxfileupload.js" rel="script"></script>
+<script src="../js/iconfont.js" rel="script"></script>
+<script src="../js/control.js" rel="script"></script>
+<script src="../js/area.js" rel="script"></script>
+<script src="../js/resume_reg1.js" rel="script"></script>
+<script>
+   $(function () {
+
+       //上传文件
+       $('.one_btn .icon').on('click',function(){
+           var file=$("#file");
+           file.click();
+           file.on('change',function(e){
+
+               var imgfile=this.files[0];
+               var src=URL.createObjectURL(imgfile);
+               var uploadsuccesspic="<img style='height:100px' src='"+src+"'>"
+               $('.one_btn').html(uploadsuccesspic);
+               //uploadFile(this,'file');
+           });
+           function uploadFile(obj, type) {
+
+               $.ajaxFileUpload({
+                   url : "http://localhost:8081/ws2/servlet/fileUpload",
+                   secureuri : false,// 一般设置为false
+                   fileElementId :type,// 文件上传表单的id <input type="file" id="fileUpload" name="file" />
+                   dataType : 'json',// 返回值类型 一般设置为json
+                   data: {'type': type, "type2":2},
+                   success : function(data) // 服务器成功响应处理函数
+                   {
+
+                   },
+                   error : function(data)// 服务器响应失败处理函数
+                   {
+                       console.log("服务器异常");
+                   }
+               });
+               return false;
+           };
+       })
+
+
+
+$("#post_next").on("click",function(){
+    var headimgurl=$(".img_tx img").eq(0).attr("src");//头像
+    var sex="1";//1男，0女
+    if($(".radio_sec").html()=="我是女生"){
+        var sex="0"
+    }else{
+        var sex="1"
+    }
+    var user_name=$("#user_name").val();//用户名
+    var telphone=$("#telphone").val();//电话
+    var email=$("#email").val();//邮箱
+    var city=$("#city").val();//省市
+    var city_area=$("#city_area").val();//二级城市
+    var address=$("#address").val();//地址
+
+    if($.trim(user_name)==""){
+        var input_box=$("#user_name").closest(".general-input");
+        input_box.css("border-color","#e23d46");
+        $(".chec_tip1 .left_align").eq(0).html(tipmsg("error","请输入用户名"));
+        return false;
+    }
+
+    if($.trim(telphone)==""){
+        var input_box=$("#telphone").closest(".general-input");
+        input_box.css("border-color","#e23d46");
+        $(".chec_tip1 .right_align").html(tipmsg("error","请输入电话号码"));
+        return false;
+    }else if(!telphonetest.test(telphone)){
+        var input_box=$("#telphone").closest(".general-input");
+        input_box.css("border-color","#e23d46");
+        $(".chec_tip1 .right_align").html(tipmsg("error","输入号码有误"));
+        return false;
+    }
+
+    if($.trim(email)==""){
+        var input_box=$("#email").closest(".general-input");
+        input_box.css("border-color","#e23d46");
+        input_box.next().html(tipmsg("error","请输入邮箱"));
+        return false;
+    }else if(!eamiltest.test(email)){
+        var input_box=$("#email").closest(".general-input");
+        input_box.css("border-color","#e23d46");
+        input_box.next().html(tipmsg("error","输入邮箱有误"));
+        return false;
+    }
+
+    $.ajax({
+        url:"",
+        type:"post",
+        data:{
+            headimgurl:headimgurl,
+            sex:sex,
+            user_name:user_name,
+            telphone:telphone,
+            email:email,
+            city:city,
+            city_area:city_area,
+            address:address,
+        },
+        success:function(data){
+            var data=JSON.parse(data);
+            if(data.status==1){
+                window.location.href=""
+            }
+        }
+
+    })
+
+
+})
+
+
+   }) 
+</script>
+</html>

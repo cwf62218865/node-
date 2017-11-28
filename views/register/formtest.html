@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/control.css" rel="stylesheet">
+    <link href="../css/resume.css" rel="stylesheet">
+    <link href="../css/reguser1.css" rel="stylesheet">
+    <title>完善企业信息-第三步</title>
+</head>
+<body>
+<div class="header">
+    <div class="width1200 align_center" style="padding-top: 14px;justify-content: space-between">
+        <img src="../images/logo.png"/>
+        <div><span class="city">全国</span><span class="changecity">[切换]</span></div>
+        <div class="menu">
+            <a href="#" class="menuactive">首页</a>
+            <a  href="#">找工作</a>
+            <a  href="#">实习/兼职</a>
+            <a  href="#">求职保镖</a>
+            <a  href="#">职场信用</a>
+            <a  href="#">就业大数据</a>
+        </div>
+        <div class="login">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+            <a href="#">企业入口</a>
+        </div>
+    </div>
+</div>
+<div class="resume_content loginn_zj">
+    <div class="relative" style="width: 426px;margin: 0 auto">
+        <div class="resume_step">
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready">
+                    <span>
+                        <svg class="icon icon_right" aria-hidden="true">
+                            <use xlink:href="#icon-zhengque1"></use>
+                        </svg>
+                    </span>
+                </div>
+            </span>
+                <p>企业注册</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready">
+                    <span>
+                        <svg class="icon icon_right" aria-hidden="true">
+                            <use xlink:href="#icon-zhengque1"></use>
+                        </svg>
+                    </span>
+                </div>
+            </span>
+                <p>认证信息</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready"><span>3</span></div>
+            </span>
+                <p>完善信息</p>
+            </div>
+        </div>
+
+        <div class="resume_step_progress">
+            <i class="resume_step_ready" style="width: 360px;"></i>
+        </div>
+
+        <div class="register_msg" style="margin-bottom: 196px">
+            <form id="formobj" class="reg3_zj">
+                <div class="title_step2" style="margin-bottom: 20px;">完善信息</div>
+
+                <div class=" relative general-select left_align">
+                    <label class="general-input relative general-select">
+                        <input type="text" readonly  name="company_property" data-error="请选择公司性质"   placeholder="公司性质">
+                        <svg class="icon inputicon" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
+                        </svg>
+                    </label>
+                    <div class="options" style="height: 0px;">
+                        <div class="select-option"><span>国营企业</span></div>
+                        <div class="select-option"><span>民营企业</span></div>
+                        <div class="select-option"><span>私有企业</span> </div>
+                        <div class="select-option"><span>创业型</span> </div>
+                    </div>
+                </div>
+                <div class=" relative general-select right_align">
+                    <label class="general-input relative general-select">
+                        <input type="text" readonly name="company_scale"   placeholder="公司规模">
+                        <svg class="icon inputicon" aria-hidden="true">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-xiala" class="colorbbb"></use>
+                        </svg>
+                    </label>
+                    <div class="options" style="height: 0px;">
+                        <div class="select-option"><span>20人以下</span></div>
+                        <div class="select-option"><span>20-50人</span></div>
+                        <div class="select-option"><span>50-200人</span> </div>
+                        <div class="select-option"><span>200-500人</span> </div>
+                        <div class="select-option"><span>500-1000人</span> </div>
+                        <div class="select-option"><span>1000人以上</span> </div>
+                    </div>
+                </div>
+
+
+                <label class="general-input" style="width: 360px;">
+                    <input type="text" style="width: 320px" name="mobile" data-error="请输入手机号码" data-warn="输入手机号码有误" placeholder="请输入手机号码" data-rg="^1[3|5|7|8][0-9]\d{8}$" maxlength="15">
+
+                </label>
+
+                <label class="general-input" style="width: 360px;">
+                    <input type="text" style="width: 320px" name="mobile" data-error="请输入数字" data-warn="输入数字" placeholder="请输入数字"  data-rg="^[1-9]\d{5}$" maxlength="15">
+
+                </label>
+
+                    <span class="public_bigbtn bg1aa wrap" id="upload_laststep">马上发布简历</span>
+            </form>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<script src="../js/jquery.js" rel="script"></script>
+<script src="../js/iconfont.js" rel="script"></script>
+<script src="../js/control.js" rel="script"></script>
+<script src="../js/company_reg3.js" rel="script"></script>
+<script src="../js/formdata.js" rel="script"></script>
+<script>
+    function callback(){
+
+    }
+    $.fromdata("#formobj","test.php","#upload_laststep",function(e){
+        alert(e);
+    })
+</script>
+</html>

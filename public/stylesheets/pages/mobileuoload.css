@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.mobilebox{
+    width: 100%;
+    height: 100%;
+}
+.top_structure{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100%;
+}
+.file_name{
+    width: 42%;
+    background: url("../images/upload_name.png") no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.logo{
+    width: 23%;
+}
+.file_btn{
+    display: inline-block;
+    width: 53%;
+    border-radius: 200px;
+    text-align: center;
+}
+.camera{
+    border: 2px solid #ed4f4a;
+    background-color: #ed4f4a;
+    color: #fff;
+}
+.Album{
+    border: 2px solid #ed4f4a;
+    color:#ed4f4a
+}
+.camera1{
+    border: 2px solid #0099cc;
+    background-color: #0099cc;
+    color: #fff;
+    display: none;
+}
+.Album1{
+    border: 2px solid #0099cc;
+    color:#0099cc;
+    display: none;
+}
+.imgbox{
+    overflow: hidden;
+}
+.imgbox img{
+    border: 5px solid #e5e5e5;
+}

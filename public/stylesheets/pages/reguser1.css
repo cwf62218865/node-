@@ -1,0 +1,810 @@
+.font_zj1{
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+.font_2{
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+.resume_content{
+    position: relative;
+}
+.register_msg,.register2_msg,.login_msg{
+position: absolute;
+    background: #ffffff;
+    box-shadow:-1px -1px 10px rgba(15,126,158,0.1), /*左边阴影*/
+    1px -1px 10px rgba(15,126,158,0.1), /*右边阴影*/
+    0 12px 12px rgba(15,126,158,0.15); /*底边阴影*/
+    left: 50%;
+}
+.register_msg{
+    top: 218px;
+}
+.register2_msg,.login_msg{
+    top: 188px;
+}
+.register_msg{
+    width:460px;
+    margin-left: -230px;
+    margin-bottom: 50px;
+}
+.register2_msg{
+    width: 580px;
+    height: auto;
+    margin-left: -290px;
+    margin-bottom: 50px;
+}
+.login_msg{
+    width: 480px;
+    margin-left: -240px;
+    margin-bottom: 218px;
+}
+.msg_zj,.msgreg2_zj,.login_zj{
+    margin: 0 auto;
+    position: relative;
+}
+.msg_zj{
+    width: 340px;
+}
+.loginn_zj .msg_zj,.reg3_zj{
+    width: 360px;
+    height: auto;
+}
+
+.reg3_zj .general-input{
+    width: 170px;
+    margin-left: 0px;
+}
+.reg3_zj{
+    margin: 0 auto;
+}
+.msgreg2_zj{
+    width: 460px;
+    height: auto;
+}
+.login_zj{
+    width: 360px;
+    height: auto;
+}
+.login_zj #login{
+    display: block;
+    margin-bottom: 20px;
+}
+.loginn_zj .resume_step{
+    width: 426px;
+}
+.loginn_zj  .resume_step_progress{
+    width: 380px;
+}
+.loginn_zj .register_msg{
+    width: 480px;
+    margin-left: -240px;
+    margin-bottom: 138px;
+
+}
+.msg_zj .img_tx{
+    position: absolute;
+    display: block;
+    width: 110px;
+    height: 110px;
+    left: 50%;
+    margin-left: -55px;
+    top: -55px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    overflow: hidden;
+    background: #fff;
+}
+.msg_zj .img_tx .img_con{
+    position: absolute;
+    width: 110px;height: 110px;
+    z-index: 999;
+    top:0px;background: rgba(0,0,0,0.4);
+    text-align: center;
+    line-height: 110px;
+    cursor: pointer;
+}
+.msg_zj  .icon1 {
+    width: 60px;
+    height: 60px;
+    margin: 25px 25px;
+    fill: currentColor;
+    overflow: hidden;
+
+}
+.loginn_zj .register_msg{
+    top: 188px;
+}
+.msg_zj  .icon2{
+    width: 30px;
+    height: 24px;
+    color: #fff;
+}
+
+.icon_right{
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.pic_photo{
+    width: 100%;
+}
+.register_msg .title_zj,.register2_msg .title_zj{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
+.login_zj .title_zj{
+    width: 100%;
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    float: left;
+}
+.login_zj .public_bigbtn{
+    padding: 0;
+    text-align: center;
+    letter-spacing:6px ;
+}
+.register_msg .title_zj{
+    margin-top: 65px;
+}
+.loginn_zj .register_msg .title_zj{
+    margin-top: 40px;
+}
+.register2_msg .title_zj{
+    margin-top: 30px;
+}
+
+.login_zj .general-input{
+    margin-left: 0px;
+}
+
+.login_zj  .forget{
+    line-height: 44px;
+    text-align: right;
+}
+.login_zj  .forget a{
+    color: #0099cc;
+}
+.login_msg .foot_btns,.loginn_zj .register_msg .foot_btns{
+    width: 100%;
+    height: 86px;
+    background: #f5f5f5;
+}
+.foot_btns .con{
+    width:420px;
+    margin: 0 auto;
+    height: 86px;
+    line-height: 86px;
+}
+.foot_btns .con .icons{
+    width:30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    background: #bdc8d4;
+    display: inline-block;
+    margin-top: 28px;
+    border-radius: 50px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.foot_btns .register{
+    width: 164px;
+    float: right;
+}
+.foot_btns .register .color, .color{
+    color: #0099cc;
+}
+.foot_btns .con .icons:nth-child(1):hover{
+    background: #22a4ff;
+}
+.foot_btns .con .icons:nth-child(2):hover{
+    background: #04b00f;
+}
+.foot_btns .con .icons:nth-child(3):hover{
+    background: #ff424f;
+}
+.foot_btns .con .icons:nth-child(4):hover{
+    background: #306fb7;
+}
+.foot_btns .con .icons .icon {
+    width: 16px; height: 16px;
+}
+.foot_btns .con .left{
+    margin-left: 26px;
+}
+.login_zj input{
+    background: #f5f5f5;
+}
+.login_zj .psw{
+    margin-top: 20px;
+}
+.radio_box{
+    display: inline-block;
+    width: 160px;
+    height: 43px;
+    border:1px solid #dddddd;
+    background: #fff;
+    color: #747474;
+    text-align: center;
+    line-height: 43px;
+
+}
+#radio_box{
+    height: 40px;
+    width: 150px;
+    padding: 0 5px 0 5px;
+}
+.radio_sec{
+    border: 1px solid #1aa9d2;
+    color: #1aa9d2;
+}
+.msg_zj .radio_box{margin-top: 25px;}
+.right_align{
+    float: right;
+}
+.left_align{
+    float: left;
+}
+.font_left{
+    text-align: left;
+}
+.msg_zj .general-input{
+    width: 160px;
+    height: 43px;
+    line-height: 43px;float: right;
+    margin-top: 25px;
+}
+.loginn_zj .msg_zj .general-input{
+    margin-top: 20px;
+    position: relative;
+}
+.loginn_zj .msg_zj .tips{
+    float: left;
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    display: block;
+}
+.msg_zj .name1 input{
+    width: 92px;
+}
+.chec_tip,.chec_tip1{
+    width: 100%;
+    float: right;
+}
+.loginn_zj .msg_zj .tips .tip_msg{
+    margin-left: 12px;
+    font-size: 12px;
+    vertical-align: top;
+}
+.loginn_zj .msg_zj .detail_zj{
+    margin-top: 40px;
+}
+.msg_zj .city1 .general-input input,.msg_zj .district1 .general-input input,.education input,.year input{
+    position: absolute;
+    z-index: 99;
+    width: 100px;
+    padding-right: 40px;
+    overflow: hidden;
+}
+
+.msg_zj .general-input{
+     margin-left: 0px;
+}
+.register_msg .district_con span{
+    width: 100px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.msg_zj .email_zj,.msg_zj .detail_zj,.msg_zj .password{
+    width: 100%;
+    float: left;
+}
+.msg_zj .detail_zj input,.msg_zj .password input{
+    width: 322px;
+}
+
+.msg_zj .wrap,.login_zj .wrap,.wrap{
+    width: 100%;
+}
+#upload_laststep{
+    text-align: center;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.msg_zj .city1 .options{
+    width: 162px;
+    left: 0px;
+    top: 70px;
+    overflow-y: auto;
+}
+
+.msgreg2_zj  .options{
+    width: 162px;
+    left: 0px;
+    top: 48px;
+    overflow-y: auto;
+}
+.msg_zj .options div,.msgreg2_zj  .options div{
+    width: 160px;background: #fff;
+}
+.msg_zj .district1 .options{
+    width: 162px;
+    left: 178px;
+    right: 0px;
+    top: 210px;
+    overflow-y: auto;
+}
+.radio_box{
+    cursor: pointer;
+}
+.msg_zj .public_bigbtn{
+    margin-top: 25px;
+    text-align: center;
+    padding: 0 0;
+    border-radius: 1px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+.register_msg .title_step2{
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.loginn_zj .msg_zj .public_bigbtn{
+    margin-top: 30px;
+}
+.msgreg2_zj .general-input{
+    width: 160px;
+    margin-left: 0;
+}
+.msg_zj .name,.msg_zj .tel,.msg_zj .chema{
+    float: left;
+}
+.msg_zj .tel,.msg_zj .chema{
+    width: 210px;
+}
+.msg_zj .name1,.loginn_zj .code,.find_psw .code{
+    width: 130px;
+}
+.step2_btns .icon,.modalbox .one_btn .icon{
+    position: absolute;
+    left: -19px;
+    width: 138px;
+    height: 138px;
+    fill: currentColor;
+    overflow: hidden;
+    cursor: pointer;
+    top: -19px;
+}
+.loginn_zj .modal_con{
+    width: 276px;
+    height: 100px;
+    margin-top: 60px;
+    margin-left: 77px;
+}
+.erweima .pic{
+    width: 100px;
+    height: 100px;
+}
+.modal_con .erweima{
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.loginn_zj .modalbox .title{
+    width: 276px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 77px;
+}
+.loginn_zj .title_content{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.loginn_zj .modalbox .modalbtn{
+    margin-top: 20px;
+    height: 46px;
+}
+.register_msg .one_btn .rzpic{
+    height: 100px;
+    z-index: 999;
+}
+.one_btn .meng{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: #ffffff;
+    z-index: 1000;
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.one_btn .one_btn,.one_btn .meng{
+    cursor: pointer;
+}
+.loginn_zj .modalbox .title span{
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+.loginn_zj .modalbox .title span:nth-child(1){
+    float: left;
+}
+.loginn_zj .modalbox .title span:nth-child(2){
+    float: right;
+}
+.step2_btns{
+    width: 362px;
+    margin-top: 40px;
+    float: left;
+}
+.step2_btns .one_btn,.modalbox .one_btn{
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.step2_btns  .pro1{
+    width: 120px;
+    height: 34px;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+}
+.step2_btns .one_btn:nth-child(2),.step2_btns .one_btn:nth-child(3){
+    margin-left: 30px;
+}
+
+.loginn_zj .code,.find_psw .code{
+    height: 43px;
+    line-height: 43px;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+    background: #bbbbbb;
+    color: #ffffff;
+    cursor: pointer;
+}
+.loginn_zj .click,.find_psw .click{
+    background: #e23d46;
+}
+.loginn_zj .zhucexieyi{
+    text-align: center;
+    margin-top:16px;
+    margin-bottom:30px ;
+}
+.msgreg2_zj .school,.msgreg2_zj .industry{
+    width: 280px;
+}
+.msgreg2_zj .education,.msgreg2_zj .year{
+    width: 160px;
+}
+.msgreg2_zj .school,.msgreg2_zj .education{
+    margin-top: 20px;
+}
+.msgreg2_zj .industry,.msgreg2_zj .year{
+    margin-top: 20px;
+}
+.msgreg2_zj .industry{
+    float: left;
+}
+.msgreg2_zj .dashed{
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+    border: 1px dashed #0099cc;
+    color:#0099cc ;
+    margin-top: 25px;
+    cursor: pointer;
+    float: left;
+    width: 100%;
+}
+
+.register2_msg .next_step{
+    width: 100%;
+    height: 85px;
+    background: #f5f5f5;
+    float: left;
+    margin-top: 25px;
+}
+.next_step .prev{
+    width: 360px;
+    height: 85px;
+    line-height: 85px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    padding-left: 30px;
+    color: #999999;
+}
+.next_step .next_btn{
+    width: 160px;
+    height: 48px;
+    margin: 20px 0;
+    background:#0099cc ;
+    line-height: 48px;
+    text-align: center;
+    color: #fff;
+}
+.register2_msg .zjaddexp{
+    float: left;
+    margin-bottom: 20px;
+}
+.next_step a,.next_step .next_btn,.inputicon{
+    cursor: pointer;
+}
+.title_step2{
+    font-size: 16px;
+}
+.register2_msg .cwfdashed460{
+    margin-left: 0;
+    height: 0;
+    float: left;
+}
+
+.register2_msg .cwfreg3content{
+    margin-left: 0;
+    float: left;
+    margin-top: 20px;
+}
+.rout .routzj{
+    height: 820px;
+    float: left;
+}
+.rout .routzj .rout_con{
+    width: 700px;
+    height: 450px;
+    margin: 0 auto;
+    margin-top: 150px;
+    background: url("/static/images/qinghuai.png") no-repeat;
+}
+.rout .routzj .icos{
+    float: left;
+    width: 240px;
+    height: 36px;
+    margin-top: 375px;
+    margin-left: 234px;
+}
+.rout .routzj .btn_start{
+    float: left;
+}
+.rout .routzj .time{
+    width: 110px;height: 36px;line-height: 36px;
+    float: left;
+    margin-left: 16px;
+}
+
+.rout .routzj .logo_r{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.resume_content .login_msg input{
+    width: 322px;
+}
+.loginn_zj .modal{
+    top: 280px;
+    width: 430px;
+    height: 340px;
+}
+#choosefile{
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    opacity: 0; filter:Alpha(opacity=0)
+}
+.school input,.industry input{
+    width: 242px;
+}
+.reg3_zj .options{
+    width: 172px;
+    left: 0;
+    top:68px;
+}
+.reg3_zj .options .select-option {
+    width: 170px;
+}
+.reg3_zj .general-input input{
+    width: 150px;
+    position: absolute;
+    z-index: 99;
+}
+.zjbq{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.zjbiaoqian{
+    width: 174px;
+    float: right;
+}
+.zjbiaoqian input{
+    width: 96px;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    outline: none;
+}
+.zjtianjia{
+    float: right;
+    width: 54px;
+    height: 30px;
+    background: #0099cc;
+    border: 1px solid #0099cc;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.zjflbq{
+    text-align: center;
+    display: inline-block;
+    float: left;
+    border: 1px solid #0099cc;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 13px;
+    font-size: 12px;
+    color: #0099cc;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.bqselect{
+    color: #fff;
+    background:#0099cc;
+}
+.zjbiaoqian_wrap{
+    width: 388px;
+    margin-left: -14px;
+}
+.zjflbq:nth-child(1),.zjflbq:nth-child(6){
+    margin-left: 0;
+}
+.zjflbq:nth-child(6),.zjflbq:nth-child(7),.zjflbq:nth-child(8),.zjflbq:nth-child(9),.zjflbq:nth-child(10){
+    margin-top: 15px;
+}
+.zjwidth2{
+    width: 48px;
+}
+.zjwidth3{
+    width: 58px;
+}
+.zjwidth4{
+    width: 68px;
+}
+.zjwidth5{
+    width: 78px;
+}
+.reg3_zj .general-input{
+    margin-top: 20px;
+}
+.zjfulibq,.zjbiaoqian_wrap{
+    margin-top: 30px;
+}
+.reg3_zj  .hangye{
+    width: 360px;
+    height: auto;
+    background: #fff;
+    box-shadow:-1px -1px 6px rgba(0,0,0,0.1), /*左边阴影*/
+    1px -1px 6px rgba(0,0,0,0.1), /*右边阴影*/
+    0 1px 6px rgba(0,0,0,0.1); /*底边阴影*/
+}
+.reg3_zj .hangye_con span{
+    margin-left: 0;
+}
+.reg3_zj  .hangye .select-option{
+    display: inline-block;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 13px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-left: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.reg3_zj  .hangye .select-option:nth-child(1),
+.reg3_zj  .hangye .select-option:nth-child(2),
+.reg3_zj  .hangye .select-option:nth-child(3),
+.reg3_zj  .hangye .select-option:nth-child(4){
+    margin-top: 0;
+}
+.reg3_zj  .hangye .select-option:nth-child(1),
+.reg3_zj  .hangye .select-option:nth-child(5),
+.reg3_zj  .hangye .select-option:nth-child(9),
+.reg3_zj  .hangye .select-option:nth-child(13){
+    margin-left: 0;
+}
+.hangye_con{
+    width: 340px;
+    margin:30px auto;
+}
+.reg3_zj  .hangye .zjwidth_d1{
+    width: 90px;
+}
+#find_password_tel,#find_password_email{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+}
+.find_psw .yanzhengma{
+    width: 210px;
+    margin-top: 20px;
+}
+.find_psw .yanzhengma input{
+    width: 170px;
+}
+.forgetpsw_title{
+    display: inline-block;
+    width: 180px;
+    float: left;
+    text-align: center;
+    border-bottom: 1px solid #eeeeee;
+    height: 30px;
+    line-height: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.xuanzhong{
+    background: url(../images/selcet_psw.png)no-repeat bottom;
+    border-bottom: none;
+    color: #0099cc;
+}
+#return_login_tel,#return_login_email{
+    display: inline-block;
+    width: 100px;
+    margin-left: 130px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #0099cc;
+    cursor: pointer;
+}
+.bind_tip{
+    color: #bbbbbb;width: 100%;text-align: center;margin-bottom: 40px;display: block;
+}
+.bind_line1{
+    font-size: 16px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.bind_line2{
+    font-size: 14px;
+    color: #bbbbbb;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.rzpic{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100px;
+    max-height:100px;
+}
+

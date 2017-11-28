@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/header.css" rel="stylesheet">
+    <link href="../css/control.css" rel="stylesheet">
+    <link href="../css/resume.css" rel="stylesheet">
+    <link href="../css/reguser1.css" rel="stylesheet">
+    <title>简历填写</title>
+</head>
+<style>
+    .chec_tip, .chec_tip1{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+<div class="header">
+    <div class="width1200 align_center" style="padding-top: 14px;justify-content: space-between">
+        <img src="../images/logo.png"/>
+        <div style="height: 52px;line-height: 52px"><span class="city">全国</span><span class="changecity">[切换]</span></div>
+        <div class="menu">
+            <a href="#" class="menuactive">首页</a>
+            <a  href="#">找工作</a>
+            <a  href="#">实习/兼职</a>
+            <a  href="#">求职保镖</a>
+            <a  href="#">职场信用</a>
+            <a  href="#">就业大数据</a>
+        </div>
+        <div class="login">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+            <a href="#">企业入口</a>
+        </div>
+    </div>
+</div>
+<div class="resume_content">
+    <div class="relative" style="width: 620px;margin: 0 auto">
+        <div class="resume_step">
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready">
+                    <span>
+                    <svg class="icon icon_right" aria-hidden="true">
+                        <use xlink:href="#icon-zhengque1"></use>
+                    </svg>
+                </span></div>
+            </span>
+                <p>基本信息</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready">
+                    <span>
+                    <svg class="icon icon_right" aria-hidden="true">
+                        <use xlink:href="#icon-zhengque1"></use>
+                    </svg>
+                </span></div>
+            </span>
+                <p>教育经历</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_ready"><span>3</span></div>
+            </span>
+                <p>工作经历</p>
+            </div>
+            <div class="resume_stepbox">
+            <span class="resume_step_circular">
+                <div class="resume_step_circular1 resume_step_no"><span>4</span></div>
+            </span>
+                <p>一句话介绍</p>
+            </div>
+        </div>
+
+        <div class="resume_step_progress">
+            <i class="resume_step_ready" style="width: 470px"></i>
+        </div>
+    </div>
+
+
+    <!--操作-->
+    <div class="cwfresume_reg3">
+        <p class="cwftitle">工作经历</p>
+
+
+        <div id="cwfaddexp" class="exp">
+            <div class="cwfreg3content">
+                <label class="general-input cwfre3inputleft" >
+                    <input type="text" class="company_name" placeholder="公司名称">
+                </label>
+                <label class="general-input cwfre3inputright" >
+                    <input type="text" class="job_name" placeholder="职位">
+                </label>
+                <div class="chec_tip1">
+                    <div class="left_align"></div>
+                    <div class="right_align" style="width: 160px;"></div>
+                </div>
+            </div>
+
+            <div class="cwfreg3content">
+                <label class="general-input cwfre3inputleft" style="width:460px">
+                    <input type="text" class="leave_reason" placeholder="离职原因" style="width: 420px">
+                </label>
+                <div class="chec_tip1">
+                    <div class="left_align"></div>
+                </div>
+            </div>
+
+            <div class="cwfreg3content">
+                <div class=" relative general-select cwfre3inputleft" style="height: 46px;width: 220px;display: inline-block">
+                    <label class="general-input relative general-select" style="margin-left: 0;width: 220px">
+                        <input type="text" readonly class="job_starttime" placeholder="开始时间" style="width: 200px;padding-left: 20px;margin: 0;background-color: rgba(0,0,0,0);position: absolute;z-index: 10;top: 0px">
+                        <svg class="icon inputicon colorbbb" aria-hidden="true">
+                            <use xlink:href="#icon-xiala"></use>
+                        </svg>
+                    </label>
+                    <div class="options" style="left: 0;width: 242px;top: 48px">
+                        <div class="cwftimeoptions" style="height: 147px;">
+
+                        </div>
+                        <div class="cwfmonths" style="height: 147px;">
+                            <span>1月</span>
+                            <span>2月</span>
+                            <span>3月</span>
+                            <span>4月</span>
+                            <span>5月</span>
+                            <span>6月</span>
+                            <span>7月</span>
+                            <span>8月</span>
+                            <span>9月</span>
+                            <span>10月</span>
+                            <span>11月</span>
+                            <span>12月</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class=" relative general-select cwfre3inputright" style="height: 46px;width: 220px">
+                    <label class="general-input relative general-select" style="margin-left: 0;width: 220px">
+                        <input type="text" readonly class="job_endtime" placeholder="结束时间" style="width: 200px;padding-left: 20px;margin: 0;background-color: rgba(0,0,0,0);position: absolute;z-index: 10;top: 0px">
+                        <svg class="icon inputicon colorbbb" aria-hidden="true">
+                            <use xlink:href="#icon-xiala"></use>
+                        </svg>
+                    </label>
+                    <div class="options" style="left: 0;width: 242px;top: 48px">
+                        <div class="cwftimeoptions" style="height: 147px;">
+
+                        </div>
+                        <div class="cwfmonths" style="height: 147px;">
+                            <span>1月</span>
+                            <span>2月</span>
+                            <span>3月</span>
+                            <span>4月</span>
+                            <span>5月</span>
+                            <span>6月</span>
+                            <span>7月</span>
+                            <span>8月</span>
+                            <span>9月</span>
+                            <span>10月</span>
+                            <span>11月</span>
+                            <span>12月</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="chec_tip1">
+                    <div class="left_align"></div>
+                    <div class="right_align" style="width: 222px;"></div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="cwfreg3content" id="addexp">
+            <span class="cwfaddexp">添加更多经历</span>
+        </div>
+
+        <div class="cwfgoing">
+            <span class="cwfgoingleft">上一步</span>
+            <span class="cwfgoingright" id="work_submit_next_step">最后一步：介绍自己</span>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+<script src="../js/jquery.js" rel="script"></script>
+<script src="../js/iconfont.js" rel="script"></script>
+<script src="../js/control.js" rel="script"></script>
+<script src="../js/resume_reg3.js" rel="script"></script>
+<script>
+    $(document).ready(function(){
+
+        $(".job_starttime").on("click",function(){
+            $(this).closest(".cwfre3inputleft").next().next().find(".left_align").html("");
+        })
+
+        $("body").on("click",".job_starttime",function(){
+            $(this).closest(".cwfre3inputleft").next().next().find(".left_align").html("");
+        })
+
+        $(".job_endtime").on("click",function(){
+            $(this).closest(".cwfre3inputright").next().find(".right_align").html("");
+        })
+
+        $("body").on("click",".job_endtime",function(){
+            $(this).closest(".cwfre3inputright").next().find(".right_align").html("");
+        })
+
+
+
+        $("#work_submit_next_step").click(function(){
+            var explength=$(".exp").length;
+            var job_data=new Array();
+            for(var i=0;i<explength;i++){
+                var company_name=$(".company_name").eq(i).val();
+                var job_name=$(".job_name").eq(i).val();
+                var leave_reason=$(".leave_reason").eq(i).val();
+                var job_starttime=$(".job_starttime").eq(i).val();
+                var job_endtime=$(".job_endtime").eq(i).val();
+
+                var name_input=$(".company_name").eq(i).closest(".general-input");
+                var job_input=$(".job_name").eq(i).closest(".general-input");
+                var leave_input=$(".leave_reason").eq(i).closest(".general-input");
+
+                var starttime_input=$(".job_starttime").eq(i).closest(".general-input");
+                var starttime_border=$(".job_starttime").eq(i).closest(".cwfre3inputleft");
+
+                var endtime_input=$(".job_endtime").eq(i).closest(".general-input");
+                var endtime_border=$(".job_endtime").eq(i).closest(".cwfre3inputright");
+
+                if(company_name==""){
+                    name_input.css("border-color","#e23d46");
+                    name_input.next().next().find(".left_align").html(tipmsg("error","请输入公司名称"));
+                    return false;
+                }
+                if(job_name==""){
+                    job_input.css("border-color","#e23d46");
+                    job_input.next().find(".right_align").html(tipmsg("error","请输入职位"));
+                    return false;
+                }
+
+                if(leave_reason==""){
+                    leave_input.css("border-color","#e23d46");
+                    leave_input.next().find(".left_align").html(tipmsg("error","请输入离职原因"));
+                    return false;
+                }
+
+                if(job_starttime==""){
+                    starttime_input.css("border-color","#e23d46");
+                    starttime_border.next().next().find(".left_align").html(tipmsg("error","请选择开始时间"));
+                    return false;
+                }
+
+                if(job_endtime==""){
+                    endtime_input.css("border-color","#e23d46");
+                    endtime_border.next().find(".right_align").html(tipmsg("error","请选择结束时间"));
+                    return false;
+                }
+
+                job_data[i]=new Array();
+                job_data[i].company_name=company_name;
+                job_data[i].job_name=job_name;
+                job_data[i].leave_reason=leave_reason;
+                job_data[i].job_starttime=job_starttime;
+                job_data[i].job_endtime=job_endtime;
+
+            }
+
+            $.ajax({
+                url:"",
+                type:"post",
+                data:job_data,
+                success:function(data){
+                    if(data.status==1){
+                        window.location.href="";
+                    }else{
+                        console.log(data.content);
+                    }
+                }
+            })
+
+        });
+
+    });
+</script>
+</html>
