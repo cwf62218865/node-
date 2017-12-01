@@ -4,9 +4,9 @@ var router = express.Router();
 
 //第一次进入欢迎页面
 router.get('/', function(req, res, next) {
-    res.render('resume/first_index',
+    res.render('control',
         {
-            title:	'欢迎来到秒猎',
+            title:	'个人组件',
         }
     );
 

@@ -9,13 +9,9 @@ var RedisStore = require('connect-redis')(session);
  * 引入自定义router
  * @type {router|exports}
  */
-var loginIntercepter = require('./intercepter/loginIntercepter');
+//var loginIntercepter = require('./intercepter/loginIntercepter');
 
-
-//引入登录后首页控制
-
-//登录
-var first_index = require('./routes/web/first_index');
+var control = require('./routes/web/control');
 
 
 
@@ -28,7 +24,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 // 设置 favicon in /public
-app.use(favicon(path.join(__dirname, 'public/images', 'logo.png')));
+app.use(favicon(path.join(__dirname, 'public/images', 'close.png')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -36,24 +32,24 @@ app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use("/static",express.static(path.join(__dirname, 'public')));
 
 // 设置 Session
-app.use("/",session({
-    store: new RedisStore({
-        host:"linux.fushoukeji.com",
-        port: 6379,
-        db:1,
-        pass:"Fushoukeji123"
-    }),
-    secret: '12345',
-    name: 'session_id',
-    cookie: {maxAge: null},
-    resave: false,
-    saveUninitialized: true
-}));
+//app.use("/",session({
+//    store: new RedisStore({
+//        host:"120.55.44.163",
+//        port: 6379,
+//        db:1,
+//        pass:"132321"
+//    }),
+//    secret: '12345',
+//    name: 'session_id',
+//    cookie: {maxAge: null},
+//    resave: false,
+//    saveUninitialized: true
+//}));
 //用户登陆拦截
-app.use("/miaolie/*",loginIntercepter);
+//app.use("/miaolie/*",loginIntercepter);
 
-//登录
-app.use('/first_index', first_index);
+//控件页面
+app.use('/', control);
 
 
 
