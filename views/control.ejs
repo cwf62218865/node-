@@ -2,7 +2,6 @@
 <html lang="zh-CN">
 <head>
     <title><%= title %></title>
-
     <meta name="description" content="">
     <meta name="Keywords" content="" >
     <% include version.ejs%>
@@ -10,9 +9,110 @@
 </head>
 <body>
     <div class="w1000">
+        <h2 class="page_title">组件列表</h2>
+
+        <!--确认-->
+        <div class="controls">
+            <p>1、confirm确认</p>
+            <table>
+                <tr>
+                    <td>使用方法：</td>
+                    <td> $.basecontrol.confirm([option])</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>option.title:设置确认标题</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>option.content:设置确认提示信息</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>option.cancel:设置取消按钮文字</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>option.confirm:设置确认按钮文字</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>option.overflow:设置页面是否滚动参数（auto/hidden）</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>option.callback(data):回调函数点击确认返回data=true</td>
+                </tr>
+
+                <tr>
+                    <td>示例：</td>
+                    <td><span class="test_btn" id="confirm">删除</span></td>
+                </tr>
+
+            </table>
+        </div>
+
+        <!--分页-->
+        <div class="controls">
+            <p>1、分页</p>
+            <table>
+                <tr>
+                    <td>使用方法：</td>
+                    <td>$.basecontrol.pages(当前页码,总页码)，返回整个分页的html</td>
+                </tr>
+                <tr>
+                    <td>示例：</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="page"></td>
+                </tr>
+
+            </table>
+        </div>
+
 
     </div>
 <% include footer.ejs%>
 <!--请在下方写此页面业务相关的脚本-->
 </body>
+<script>
+    $(document).ready(function(){
+
+//        确认示例
+        $("#confirm").on("click",function(){
+            $.basecontrol.confirm({
+                title:"不要删我",
+                overflow:"hidden",
+                callback:function(data){
+                    alert(data);
+                }
+            })
+        })
+
+//        分页示例
+
+        $("#page").html($.basecontrol.pages(1,50))
+        var num=1;
+        $("#page").on("click",".page",function(){
+            num=$(this).html();
+            $("#page").html($.basecontrol.pages(num,50))
+        })
+        $("#page").on("click",".pre_page",function(){
+            num-=1;
+            $("#page").html($.basecontrol.pages(num,50))
+        })
+        $("#page").on("click",".next_page",function(){
+            num+=1;
+            $("#page").html($.basecontrol.pages(num,50))
+        })
+
+    })
+
+</script>
 </html>

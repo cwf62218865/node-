@@ -1,16 +1,15 @@
 @charset "UTF-8";
-
 /* CSS Document */
 /****************************************/
 /*  功能：base                          */
 /****************************************/
 html {
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   position: relative;
 }
-
 div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p {
   margin: 0;
   padding: 0;
@@ -22,11 +21,151 @@ body {
   font-family: "Microsoft YaHei";
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  height: 100%;
 }
 fieldset, img {
   border: none;
 }
 ol, ul {
   list-style: none;
+}
+
+
+
+//确认弹窗
+.modalbg{
+  background: rgba(0,0,0,0.4);
+}
+.btnbgcolor09c{
+  background-color: #1aa9d2;
+}
+.btnbgcolor09chover{
+  background-color: #289fd1;
+}
+.basebtn{
+  display: inline-block;
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.modalbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .modalbg;
+}
+/*确认弹窗*/
+.stopbox{
+  display: inline-block;
+  width: 430px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-left: -215px;
+  margin-top: -125px;
+}
+.stopbox_title{
+  margin-top: 30px;
+  font-size: 18px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.stopbox_content{
+  display: inline-block;
+  width: 330px;
+  margin-left: 50px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 50px;
+  line-height: 26px;
+}
+.stopbox_btn{
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  text-align: center;
+  width: 100%;
+  left: 0;
+}
+#cancel_btns{
+  .basebtn;
+  .btnbgcolor09c;
+  color: #fff;
+  margin-right: 10px;
+}
+#cancel_btns:hover{
+  .btnbgcolor09chover
+}
+
+#confirm_btns{
+  .basebtn;
+  color: #1aa9d2;
+  margin-left: 10px;
+}
+.close_modalbox{
+  display: inline-block;
+  position: absolute;
+  padding: 6px 8px;
+  top: 10px;
+  right: 10px;
+  color: #999;
+  cursor: pointer;
+}
+
+
+/*分页*/
+.pre_page,.next_page,.pages_btn .page{
+  border: 1px solid #eeeeee;
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin-right: 6px;
+  color: #666666;
+  cursor: pointer;
+}
+.page1{
+  border: 1px solid #eeeeee;
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin-right: 6px;
+  color: #666666;
+}
+.pre_page:hover,
+.next_page:hover,
+.page:hover{
+  background: #0099cc;
+  color: #ffffff;
+}
+.pre_page,.next_page{
+  width: 62px;
+  height: 34px;
+}
+.pages_btn .page,.pages_btn .page1{
+  width: 34px;
+}
+.pages_btn .select{
+  background: #0099cc;
+  color: #ffffff;
+}
+.no_page{
+  color: #eee;
+  /*cursor: not-allowed;*/
+}
+.no_page:hover{
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  color: #eee;
 }

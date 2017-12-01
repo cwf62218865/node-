@@ -1,0 +1,39 @@
+.w1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+.page_title{
+    text-align: center;
+    margin-top: 50px;
+}
+.controls{
+    margin-top: 20px;
+    line-height: 24px;
+}
+.controls p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.controls table{
+    font-size: 16px;
+    margin-top: 30px;
+    width: 100%;
+}
+.controls table td{
+    padding: 10px 0;
+    width: 50%;
+}
+.test_btn{
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background-color: #0099CC;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.numinput{
+    width: 40px;
+}
